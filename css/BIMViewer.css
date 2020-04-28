@@ -16,13 +16,13 @@
     position: relative;
     display: inline-flex;
     vertical-align: middle;
-    margin-right: 1.2rem !important;
+    margin-right: 1.5rem !important;
     pointer-events: none;
 }
 
 .xeokit-logo-image {
     position: fixed;
-    bottom: 0px;
+    bottom: -40px;
 }
 
 .xeokit-logo-image img {
@@ -33,12 +33,12 @@
 .xeokit-btn {
     position: relative;
     flex: 1 1 auto;
-    color: #03103F;
+    /* color: #03103F; */
     background-color: #fad116;
     text-align: center;
     vertical-align: middle;
     border: none;
-    padding: 0.35rem .35rem;
+    /* padding: 0.35rem .35rem; */
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
@@ -52,7 +52,7 @@
 
 .xeokit-btn.disabled {
     /* opacity: .55; */
-    color: black;
+    /* color: black; */
     /* border: 2px solid #6c757d !important; */
 }
 
@@ -63,21 +63,21 @@
 }
 
 .xeokit-btn:hover {
-    color: #477dca;
-    border: 2px solid #477dca;
+    /* color: #477dca;
+    border: 2px solid #477dca; */
 }
 
 .xeokit-btn.active:hover {
     /*color: transparent;*/
     color: white;
-    background: #477dca;
-    border: 2px solid #477dca;
+    /* background: #477dca;
+    border: 2px solid #477dca; */
 }
 
 .xeokit-btn.disabled:hover {
     opacity: .55;
-    color: #99A4AD;
-    border: 2px solid #6c757d !important;
+    /* color: #99A4AD;
+    border: 2px solid #6c757d !important; */
 }
 
 /*  Tabs    */
@@ -199,7 +199,7 @@
     font-weight: normal;
     position: relative;
     flex: 1 1 auto;
-    color: #000000;
+    /* color: #000000; */
     background-color: #fad116;
     text-align: center;
     vertical-align: middle;

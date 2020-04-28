@@ -3,6 +3,7 @@ import {BusyModal} from "./BusyModal.js";
 import {ResetAction} from "./toolbar/ResetAction.js";
 import {FitAction} from "./toolbar/FitAction.js";
 import {FirstPersonMode} from "./toolbar/FirstPersonMode.js";
+import {AddAnnotationMode} from "./toolbar/AddAnnotationMode.js";
 import {HideTool} from "./toolbar/HideTool.js";
 import {SelectionTool} from "./toolbar/SelectionTool.js";
 import {QueryTool} from "./toolbar/QueryTool.js";
@@ -18,6 +19,8 @@ import {Viewer} from "@xeokit/xeokit-sdk/src/viewer/Viewer.js";
 import {AmbientLight} from "@xeokit/xeokit-sdk/src/viewer/scene/lights/AmbientLight.js";
 import {DirLight} from "@xeokit/xeokit-sdk/src/viewer/scene/lights/DirLight.js";
 import {BCFViewpointsPlugin} from "@xeokit/xeokit-sdk/src/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js";
+import {AnnotationsPlugin} from "@xeokit/xeokit-sdk/src/plugins/AnnotationsPlugin/AnnotationsPlugin.js";
+import {DistanceMeasurementsPlugin} from "@xeokit/xeokit-sdk/src/plugins/DistanceMeasurementsPlugin/DistanceMeasurementsPlugin.js";
 import {ThreeDMode} from "./toolbar/ThreeDMode.js";
 import {ObjectContextMenu} from "./contextMenus/ObjectContextMenu.js";
 import {math} from "@xeokit/xeokit-sdk/src/viewer/scene/math/math.js";
@@ -71,36 +74,46 @@ const explorerTemplate = `<div class="xeokit-tabs">
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <button type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></button>
+        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></button>
+        <img src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></img>
     </div>
     <!-- Fit button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></button>
+        <img src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></img>
     </div>
-    <!-- First Person mode button -->
+    <!-- Ruler mode button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></button>
+        <img src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></img>
     </div>
-    
+    <!-- Add annotation mode button-->
+    <div class="xeokit-btn-group" role="group">
+        <img src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
+    </div>
+
+    <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></button>
+        <img src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
     </div>
     <!-- Select tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></button>
+        <img src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></img>
     </div>
     <!-- Query tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></button>
+        <img src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
     </div>
     <!-- Slice tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></button>
+        <img src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></ing>
+    </div>
+
+    <!-- First Person mode button -->
+    <div class="xeokit-btn-group" role="group">
+        <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
     </div>
 </div>`;
 
@@ -268,6 +281,11 @@ class BIMViewer extends Controller {
             active: false
         });
 
+        this._addAnnotationMode = new AddAnnotationMode(this, {
+            buttonElement: toolbarElement.querySelector(".xeokit-addAnnotation"),
+            active: false
+        });
+
         this._hideTool = new HideTool(this, {
             buttonElement: toolbarElement.querySelector(".xeokit-hide"),
             active: false
@@ -300,6 +318,7 @@ class BIMViewer extends Controller {
 
         this._threeDMode.setActive(true);
         this._firstPersonMode.setActive(false);
+        this._addAnnotationMode.setActive(false);
         this._navCubeMode.setActive(true);
 
         this._modelsExplorer.on("modelLoaded", (modelId) => {
@@ -371,8 +390,57 @@ class BIMViewer extends Controller {
         });
 
         this._bcfViewpointsPlugin = new BCFViewpointsPlugin(this.viewer, {});
-    }
 
+	const annotations = new AnnotationsPlugin(this.viewer, {
+
+        markerHTML: "<div class='annotation-marker' style='background-color: {{markerBGColor}};'>{{glyph}}</div>",
+        labelHTML: "<div class='annotation-label' style='background-color: {{labelBGColor}};'><input class='annotation-title' type='text' value ='{{title}}' /><input class='annotation-desc' type='text' value = '{{description}}' /></div></div>",
+
+        values: {
+            markerBGColor: "red",
+            glyph: "X",
+            title: "Untitled",
+            description: "No description"
+        }
+    });
+
+    annotations.on("markerClicked", (annotation) => {
+        annotation.setLabelShown(!annotation.getLabelShown());
+    });
+    
+
+    let i = 1;
+
+    this.viewer.scene.input.on("mouseclicked", (coords) => {
+        if(this._addAnnotationMode.getActive()) {
+            var pickResult = viewer.scene.pick({
+                canvasPos: coords,
+                pickSurface: true  // <<------ This causes picking to find the intersection point on the entity
+            });
+
+            if (pickResult) {
+
+                const annotation = annotations.createAnnotation({
+                    id: "notes_" + i,
+                    pickResult: pickResult, // <<------- initializes worldPos and entity from PickResult
+                    occludable: true,       // Optional, default is true
+                    markerShown: true,      // Optional, default is true
+                    labelShown: true,       // Optional, default is true
+                    values: {               // HTML template values
+                        glyph: "A" + i,
+                        title: "",
+                        description: ""
+                    },
+                });
+
+                i++;
+            }
+        }
+    });
+   
+    this._distanceMeasurements = new DistanceMeasurementsPlugin(this.viewer);
+	
+    }
     _customizeViewer() {
 
         const scene = this.viewer.scene;
@@ -1622,6 +1690,7 @@ class BIMViewer extends Controller {
         this._fitAction.setEnabled(enabled);
         this._threeDMode.setEnabled(enabled);
         this._firstPersonMode.setEnabled(enabled);
+        this._addAnnotationMode.setEnabled(enabled);
         this._queryTool.setEnabled(enabled);
         this._hideTool.setEnabled(enabled);
         this._selectionTool.setEnabled(enabled);
