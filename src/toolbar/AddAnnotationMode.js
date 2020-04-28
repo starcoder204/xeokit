@@ -1,7 +1,7 @@
 import {Controller} from "../Controller.js";
 
 /** @private */
-class FirstPersonMode extends Controller {
+class AddAnnotationMode extends Controller {
 
     constructor(parent, cfg) {
 
@@ -31,15 +31,8 @@ class FirstPersonMode extends Controller {
 
         this.on("active", (active) => {
             if (active) {
-                if(this.bimViewer._distanceMeasurements)
-                this.bimViewer._distanceMeasurements.control.activate();
-                if(this.bimViewer._addAnnotationMode) {
-                    this.bimViewer._addAnnotationMode.setActive(false);
-                }
-            } else {
-                if(this.bimViewer._distanceMeasurements) {
-                    this.bimViewer._distanceMeasurements.control.deactivate();
-                    this.bimViewer._distanceMeasurements.clear(); 
+                if(this.bimViewer._firstPersonMode) {
+                    this.bimViewer._firstPersonMode.setActive(false);
                 }
             }
         });
@@ -59,4 +52,4 @@ class FirstPersonMode extends Controller {
     }
 }
 
-export {FirstPersonMode};
+export {AddAnnotationMode};
