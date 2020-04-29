@@ -34,6 +34,52 @@ body {
     padding: 0;
     padding-left: 15px;
     overflow-y: hidden;
+
+    transition: all 1s ease-in-out;
+}
+
+#panel_control_btn {
+    width: 0px;
+    height: 0px;
+    z-index: 10000;
+    position: fixed;
+    left: 415px;
+    top: 45%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #ffa700;
+    cursor: pointer;
+}
+
+#myViewer.panel-hide #panel_control_btn {
+    width: 0px;
+    height: 0px;
+    z-index: 10000;
+    position: fixed;
+    left: 5px;
+    top: 45%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #ffa700;
+    cursor: pointer;
+}
+
+#myViewer.panel-hide #myExplorer {
+    display: none !important;
+    /* animation-duration: 1s;
+    animation-name: blackPanel; */
+}
+
+@keyframes blackPanel {
+    from {
+        margin-left:20px;
+        width: 400px;
+    }
+
+    to {
+        margin-left: 0px;
+        width: 0px
+    }
 }
 
 #myExplorer.active {
@@ -82,6 +128,12 @@ body {
 
 #myContent {
     width: calc(100% - 400px);
+    height: 100%;
+    background: #f2f2f2;
+}
+
+#myViewer.panel-hide #myContent {
+    width: 100%;
     height: 100%;
     background: #f2f2f2;
 }

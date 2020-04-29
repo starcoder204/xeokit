@@ -93,7 +93,7 @@
         }
 
     </style>
-    
+
 </head>
 
 <body>
@@ -104,6 +104,7 @@
         <div id="myToolbar"></div>
         <canvas id="myCanvas"></canvas>
     </div>
+    <div id="panel_control_btn"> </div>
 </div>
 <canvas id="myNavCubeCanvas"></canvas>
 </body>
@@ -294,6 +295,18 @@
             }
             return hashParams;
         }
+
+        var hide_flag = false;
+        document.getElementById('panel_control_btn').addEventListener('click', function() {
+            var element = document.getElementById("myViewer");
+            if (hide_flag == false) {
+                element.classList.add("panel-hide");
+            } else {
+                element.classList.remove("panel-hide");
+            }
+            console.log(hide_flag);
+            hide_flag = !hide_flag;
+        })
 
         window.bimViewer = bimViewer; // For debugging
     };
