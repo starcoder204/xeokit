@@ -54,7 +54,7 @@ body {
 #myViewer.panel-hide #panel_control_btn {
     width: 0px;
     height: 0px;
-    z-index: 10000;
+    z-index: 10001;
     position: fixed;
     left: 5px;
     top: 45%;
