@@ -126,6 +126,7 @@
 
 .xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
     background-color: #010101;
+    color: #fad116;
 }
 
 @media (min-width: 40em) {
