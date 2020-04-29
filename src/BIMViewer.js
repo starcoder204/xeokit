@@ -74,7 +74,7 @@ const explorerTemplate = `<div class="xeokit-tabs">
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <img src="../images/icon-home2.png" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
+        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
@@ -96,24 +96,24 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></button>
+        <img src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
     </div>
     <!-- Select tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></button>
+        <img src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></img>
     </div>
     <!-- Query tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></button>
+        <img src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
     </div>
     <!-- Slice tool button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></ing>
+        <img src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></img>
     </div>
 
     <!-- First Person mode button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></button>
+        <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
     </div>
 </div>`;
 
