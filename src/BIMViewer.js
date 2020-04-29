@@ -74,7 +74,7 @@ const explorerTemplate = `<div class="xeokit-tabs">
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
+        <img src="../images/icon-home2.png" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
