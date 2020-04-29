@@ -394,7 +394,7 @@ class BIMViewer extends Controller {
 	const annotations = new AnnotationsPlugin(this.viewer, {
 
         markerHTML: "<div class='annotation-marker' style='background-color: {{markerBGColor}};'>{{glyph}}</div>",
-        labelHTML: "<div class='annotation-label' style='background-color: {{labelBGColor}};'><input class='annotation-title' type='text' value ='{{title}}' /><input class='annotation-desc' type='text' value = '{{description}}' /></div></div>",
+        labelHTML: "<div class='annotation-label' style='background-color: {{labelBGColor}};'><input class='annotation-title' type='text' value ='{{title}}' /> <br> <textarea class='annotation-desc' type='text' value = '{{description}}'></textarea> </div></div>",
 
         values: {
             markerBGColor: "red",
