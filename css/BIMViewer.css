@@ -30,20 +30,31 @@
     height: 254px;
 }
 
+img.xeokit-btn {
+    position: relative;
+    flex: 1 1 auto;
+    background-color: #fad116;
+    border-radius: .25rem;
+    margin: 0 2px 0 0;
+    pointer-events: all;
+    width: 48px;
+    height: 48px;
+}
+
 .xeokit-btn {
     position: relative;
     flex: 1 1 auto;
     background-color: #fad116;
-    /* text-align: center;
+    text-align: center;
     vertical-align: middle;
-    border: none; */
+    border: none;
     border-radius: .25rem;
-    /* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
-    overflow: visible; */
+    overflow: visible;
     margin: 0 2px 0 0;
-    /* box-sizing: border-box;
-    align-items: flex-start; */
+    box-sizing: border-box;
+    align-items: flex-start;
     pointer-events: all;
     width: 48px;
 }
