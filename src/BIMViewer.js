@@ -74,23 +74,23 @@ const explorerTemplate = `<div class="xeokit-tabs">
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <button src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></button>
+        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></button>
+        <img src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></img>
     </div>
     <!-- Fit button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></button>
+        <img src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></img>
     </div>
     <!-- Ruler mode button -->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></button>
+        <img src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></img>
     </div>
     <!-- Add annotation mode button-->
     <div class="xeokit-btn-group" role="group">
-        <button src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></button>
+        <img src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
     </div>
 
     <!-- Tools button group -->
