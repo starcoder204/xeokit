@@ -74,46 +74,46 @@ const explorerTemplate = `<div class="xeokit-tabs">
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
+        <button src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></button>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></img>
+        <button src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></button>
     </div>
     <!-- Fit button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></img>
+        <button src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></button>
     </div>
     <!-- Ruler mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></img>
+        <button src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></button>
     </div>
     <!-- Add annotation mode button-->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
+        <button src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></button>
     </div>
 
     <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
+        <button src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></button>
     </div>
     <!-- Select tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></img>
+        <button src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></button>
     </div>
     <!-- Query tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
+        <button src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></button>
     </div>
     <!-- Slice tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></ing>
+        <button src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></ing>
     </div>
 
     <!-- First Person mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
+        <button src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></button>
     </div>
 </div>`;
 
