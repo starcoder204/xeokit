@@ -33,19 +33,17 @@
 .xeokit-btn {
     position: relative;
     flex: 1 1 auto;
-    /* color: #03103F; */
     background-color: #fad116;
-    text-align: center;
+    /* text-align: center;
     vertical-align: middle;
-    border: none;
-    /* padding: 0.35rem .35rem; */
+    border: none; */
     border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    /* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
-    overflow: visible;
+    overflow: visible; */
     margin: 0 2px 0 0;
-    box-sizing: border-box;
-    align-items: flex-start;
+    /* box-sizing: border-box;
+    align-items: flex-start; */
     pointer-events: all;
     width: 48px;
 }
