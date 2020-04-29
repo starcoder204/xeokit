@@ -1,8 +1,11 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Page style */
 
 html, body {
     height: 100%;
     background: #f2f2f2;
+    color: #000;
 }
 
 body {
@@ -15,10 +18,14 @@ body {
 }
 
 #myViewer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     z-index: 10000;
     overflow: hidden;
 }
@@ -28,58 +35,14 @@ body {
     max-width: 400px;
     height: 100%;
     margin-left: -400px;
-    background: #010101;
+    background: #03103F;
     color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     padding: 0;
     padding-left: 15px;
     overflow-y: hidden;
-
-    transition: all 1s ease-in-out;
-}
-
-#panel_control_btn {
-    width: 0px;
-    height: 0px;
-    z-index: 10000;
-    position: fixed;
-    left: 415px;
-    top: 45%;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #ffa700;
-    cursor: pointer;
-}
-
-#myViewer.panel-hide #panel_control_btn {
-    width: 0px;
-    height: 0px;
-    z-index: 10001;
-    position: fixed;
-    left: 5px;
-    top: 45%;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #ffa700;
-    cursor: pointer;
-}
-
-#myViewer.panel-hide #myExplorer {
-    display: none !important;
-    /* animation-duration: 1s;
-    animation-name: blackPanel; */
-}
-
-@keyframes blackPanel {
-    from {
-        margin-left:20px;
-        width: 400px;
-    }
-
-    to {
-        margin-left: 0px;
-        width: 0px
-    }
 }
 
 #myExplorer.active {
@@ -120,7 +83,8 @@ body {
     background-color: initial;
     cursor: default;
     -webkit-appearance: checkbox;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 3px 4px 3px 8px;
     padding: initial;
     border: initial;
@@ -132,16 +96,14 @@ body {
     background: #f2f2f2;
 }
 
-#myViewer.panel-hide #myContent {
-    width: 100%;
-    height: 100%;
-    background: #f2f2f2;
-}
-
 #myToolbar {
     top: 0;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     /*height: 60px;*/
     z-index: 100000;
@@ -166,4 +128,63 @@ body {
     bottom: 0;
     right: 0;
     z-index: 200000;
+}
+
+@media (max-width: 767px) {
+
+    #myNavCubeCanvas {
+        bottom: -100px;
+    }
+
+    body {
+        width: 100vw;
+        overflow: auto;
+        display: block;
+        cursor: default;
+    }
+
+    #myViewer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: auto;
+        overflow: auto;
+        width: 100vw;
+    }
+    #myExplorer {
+        overflow: auto;
+        min-height: 300px;
+        min-width: 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 400px;
+    }
+
+    #myContent {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #myToolbar {
+        position: relative;
+    }
+
+    #myToolbar .xeokit-btn-group {
+        margin-right: 10px !important;
+    }
+
+    body canvas:last-child {
+        width: 100% !important;
+        height: 100vh !important;
+    }
 }
