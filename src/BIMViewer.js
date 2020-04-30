@@ -69,7 +69,8 @@ const explorerTemplate = `<div class="xeokit-tabs">
     <div class="xeokit-logo-image">
         <img src="../images/cde360.png"> </img>
     </div>
-</div>`;
+</div>
+<div id="panel_control_btn"> </div>`;
 
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->

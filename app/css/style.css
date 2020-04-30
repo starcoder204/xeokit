@@ -43,19 +43,21 @@ body {
     padding: 0;
     padding-left: 15px;
     overflow-y: hidden;
+    transition: all 500ms ease;
 }
 
 #panel_control_btn {
     width: 0px;
     height: 0px;
-    z-index: 10000;
-    position: fixed;
+    z-index: 10001;
+    position: absolute;
     left: 415px;
     top: 45%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-left: 30px solid #ffa700;
+    border-left: 30px solid #fad116;
     cursor: pointer;
+    transition: all 500ms ease;
 }
 
 #myViewer.panel-hide #panel_control_btn {
@@ -63,16 +65,17 @@ body {
     height: 0px;
     z-index: 10001;
     position: fixed;
-    left: 5px;
+    left: 15px;
     top: 45%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-left: 30px solid #ffa700;
+    border-left: 30px solid #fad116;
     cursor: pointer;
 }
 
 #myViewer.panel-hide #myExplorer {
-    display: none !important;
+    min-width: 0px;
+    width: 0px;
 }
 
 #myExplorer.active {
