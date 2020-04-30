@@ -62,6 +62,15 @@ body {
 
 #hide_panel_btn_mobile {
     display: none;
+    width: 0px;
+    height: 0px;
+    z-index: 10001;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #fad116;
+    cursor: pointer;
+    transform: translateY(40px);
+    pointer-events: all;
 }
 
 #myViewer.panel-hide #panel_control_btn {
