@@ -69,7 +69,7 @@ body {
     border-right: 30px solid transparent;
     border-top: 30px solid #fad116;
     cursor: pointer;
-    transform: translateY(40px);
+    transform: translate(300px, -60px);
     pointer-events: all;
 }
 
@@ -228,6 +228,7 @@ body {
 
     #myToolbar .xeokit-btn-group {
         margin-right: 10px !important;
+        margin-bottom: 5px !important;
     }
 
     body canvas:last-child {

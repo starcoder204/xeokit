@@ -94,9 +94,6 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
         <img src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
     </div>
 
-    <!-- Panel control button (Hide/Show) -->
-    <div id="hide_panel_btn_mobile" data-tippy-content="Hide Panel"></div>
-    
     <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
@@ -118,6 +115,12 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     <div class="xeokit-btn-group" role="group">
         <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
     </div>
+
+    <!-- Panel control button (Hide/Show) -->
+    <div class="xeokit-btn-group" role="group">
+        <div id="hide_panel_btn_mobile" data-tippy-content="Hide Panel"></div>
+    </div>
+    
 </div>`;
 
 function initTabs(containerElement) {
