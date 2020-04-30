@@ -43,7 +43,7 @@ body {
     padding: 0;
     padding-left: 15px;
     overflow-y: hidden;
-    transition: all 500ms ease;
+    transition: all 500ms linear;
 }
 
 #panel_control_btn {
@@ -57,7 +57,7 @@ body {
     border-bottom: 30px solid transparent;
     border-left: 30px solid #fad116;
     cursor: pointer;
-    transition: all 500ms ease;
+    transition: all 500ms linear;
 }
 
 #myViewer.panel-hide #panel_control_btn {
@@ -74,8 +74,8 @@ body {
 }
 
 #myViewer.panel-hide #myExplorer {
-    min-width: 0px;
-    width: 0px;
+    /* min-width: 0px;
+    width: 0px; */
 }
 
 #myExplorer.active {
