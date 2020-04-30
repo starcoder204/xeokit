@@ -308,6 +308,20 @@
             }
             console.log(hide_flag);
             hide_flag = !hide_flag;
+        });
+
+        document.getElementById('hide_panel_btn_mobile').addEventListener('click', function() {
+            var element = document.getElementById("myViewer");
+            var element1 = document.getElementById("myExplorer");
+            if (hide_flag == false) {
+                element.classList.add("panel-hide");
+                element1.classList.remove("active");
+            } else {
+                element.classList.remove("panel-hide");
+                element1.classList.add("active");
+            }
+            console.log(hide_flag);
+            hide_flag = !hide_flag;
         })
 
         window.bimViewer = bimViewer; // For debugging

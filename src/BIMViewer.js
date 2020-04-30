@@ -116,6 +116,11 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     <div class="xeokit-btn-group" role="group">
         <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
     </div>
+
+    <!-- Panel control button (Hide/Show) -->
+    <div class="xeokit-btn-group" role="group">
+        <button src="../images/icon-person2.svg" id="hide_panel_btn_mobile" type="button" class="xeokit-btn fa fa-eye fa-2x disabled" data-tippy-content="Hide Panel"></button>
+    </div>
 </div>`;
 
 function initTabs(containerElement) {
