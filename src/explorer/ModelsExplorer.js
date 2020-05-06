@@ -78,7 +78,7 @@ class ModelsExplorer extends Controller {
             const modelInfo = modelsInfo[i];
             this._modelsInfo[modelInfo.id] = modelInfo;
             html += "<div class='xeokit-form-check'>";
-            html += "<input id='" + modelInfo.id + "' type='checkbox' value=''><label class='inner'></label><span id='span-" + modelInfo.id + "' class='disabled'>" + modelInfo.name + "</span>";
+            html += "<input id='" + modelInfo.id + "' type='checkbox' value=''><span id='span-" + modelInfo.id + "' class='disabled'>" + modelInfo.name + "</span>";
             html += "</div>";
         }
         this._modelsElement.innerHTML = html;
