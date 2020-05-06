@@ -381,6 +381,7 @@
     position: relative;
     width: 500px;
     line-height: 3ex;
+    padding: 5px;
 }
 
 .xeokit-storeysTab ul li a {
@@ -398,15 +399,21 @@
 }
 
 .xeokit-storeysTab ul li a.plus {
-    background-color: #ded;
+    /* background-color: #ded; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-storeysTab ul li a.minus {
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-storeysTab ul li a:active {
-    top: 1px;
+    top: 4px;
 }
 
 .xeokit-storeysTab ul li input {
@@ -452,6 +459,7 @@
     position: relative;
     width: 500px;
     line-height: 3ex;
+    padding: 5px;
 }
 
 .xeokit-classesTab ul li a {
@@ -469,15 +477,21 @@
 }
 
 .xeokit-classesTab ul li a.plus {
-    background-color: #ded;
+    /* background-color: #ded; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-classesTab ul li a.minus {
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-classesTab ul li a:active {
-    top: 1px;
+    top: 4px;
 }
 
 .xeokit-classesTab ul li input {
