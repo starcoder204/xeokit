@@ -23,6 +23,7 @@
 .tippy-tooltip {
     background-color: #0c0c0c;
     color: #ffce3a;
+    z-index: 3000000000;
 }
 
 .tippy-popper[x-placement^=top] [x-arrow] {
@@ -318,11 +319,17 @@
 }
 
 .xeokit-objectsTab ul li a.plus {
-    background-color: #ded;
+    /* background-color: #ded; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-objectsTab ul li a.minus {
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: transparent;
+    border: 2px solid #ffce3a;
+    color: #ffce3a;
 }
 
 .xeokit-objectsTab ul li a:active {

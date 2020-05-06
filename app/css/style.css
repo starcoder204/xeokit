@@ -116,7 +116,7 @@ body {
 }
 
 #myExplorer ul li a:hover {
-    color: #477dca;
+    font-weight: 600;
 }
 
 #myExplorer ul li.active > a, a[aria-expanded="true"] {
