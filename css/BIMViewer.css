@@ -20,20 +20,27 @@
     pointer-events: none;
 }
 
+.tippy-tooltip {
+    background-color: #0c0c0c;
+    color: #ffce3a;
+}
+
+.tippy-popper[x-placement^=top] [x-arrow] {
+    border-top: 7px solid #0c0c0c;
+}
+
 .xeokit-logo-image {
-    position: fixed;
-    bottom: -40px;
+    
 }
 
 .xeokit-logo-image img {
-    width: 360px;
-    height: 254px;
+    height: 75px;
 }
 
 .xeokit-btn {
     position: relative;
     flex: 1 1 auto;
-    background-color: #fad116;
+    background-color: #ffce3a;
     /* text-align: center;
     vertical-align: middle;
     border: none; */
@@ -45,8 +52,9 @@
     /* box-sizing: border-box;
     align-items: flex-start; */
     pointer-events: all;
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
+    padding: 2px;
 }
 
 .xeokit-btn.disabled {
@@ -125,16 +133,17 @@
 }
 
 .xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
-    background-color: #010101;
-    color: #fad116;
+    background-color: #0c0c0c;
+    color: #ffce3a;
 }
 
 @media (min-width: 40em) {
     .xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
         background-color: transparent;
-        border-bottom: #fad116 solid 1px;
+        border-bottom: #ffce3a solid 1px;
         margin-bottom: -1px;
-        color: #fad116;
+        color: #ffce3a;
+        text-transform: uppercase;
     }
 }
 
@@ -149,13 +158,13 @@
     color: #ffffff;
     display: block;
     font-weight: bold;
-    padding: 0.75em 15px;
+    padding: 0.25em 6px;
     text-decoration: none;
 }
 
 @media (min-width: 40em) {
     .xeokit-tabs .xeokit-tab-btn {
-        font-size: 17px;
+        font-size: 18px;
         font-weight: normal;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -165,7 +174,7 @@
 }
 
 .xeokit-tabs .xeokit-tab-btn:hover {
-    color: #fad116;
+    color: #ffce3a;
 }
 
 .xeokit-tabs .xeokit-tab-btn:focus {
@@ -173,7 +182,7 @@
 }
 
 .xeokit-tabs .xeokit-tab-content {
-    background: #010101;
+    background: #0c0c0c;
     display: none;
     padding-top: 2em;
     padding-left: 0;
@@ -192,28 +201,37 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .xeokit-tabs .xeokit-btn {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 600;
     position: relative;
     flex: 1 1 auto;
-    /* color: #000000; */
-    background-color: #fad116;
+    background-color: #ffce3a;
     text-align: center;
     vertical-align: middle;
-    /* border: 2px solid #CFCFCF; */
-    padding: .25rem .45rem;
-    margin: 0 5px 10px 0;
+    border: none;
+    padding: 0.25rem 0.35rem;
+    margin: 0 5px 10px 25px;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
     overflow: visible;
     box-sizing: border-box;
     align-items: flex-start;
-    /*font: 400 13.3333px Arial;*/
-    width: 100px;
+    /* font: 500 17px Arial; */
+    width: 120px;
+    height: 30px;
+}
+
+.btn-img-div {
+    display: flex;
+}
+
+.btn-img-div span {
+    transform: translate(14px, 3px);
 }
 
 .xeokit-tabs .xeokit-btn:hover {
@@ -223,12 +241,18 @@
 }
 
 .xeokit-tabs .xeokit-tab-btn.disabled {
-    opacity: .55;
+    /* opacity: .55; */
     /* color: #99A4AD; */
 }
 
 .xeokit-modelsTab {
 
+}
+
+.tab-issue-img {
+    position: fixed;
+    width: 30px;
+    transform: translateX(20px);
 }
 
 .xeokit-modelsTab .xeokit-form-check {
@@ -486,7 +510,25 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: calc(100% - 230px);
+    margin-right: 32px;
 }
+
+.xeokit-tree-panel::-webkit-scrollbar {
+    transform: translateX(-10px);
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
+}
+
+.xeokit-tree-panel::-webkit-scrollbar-track {
+    background-color: #67676a;
+    border-radius: 10px;
+}
+
+.xeokit-tree-panel::-webkit-scrollbar-thumb {
+    border-radius: 10px 10px 0 0;
+    background-color: #ffce3a;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
+}
+
 
 /* Context menu */
 

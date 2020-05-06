@@ -27,6 +27,9 @@ import {math} from "@xeokit/xeokit-sdk/src/viewer/scene/math/math.js";
 import {CanvasContextMenu} from "./contextMenus/CanvasContextMenu.js";
 
 const explorerTemplate = `<div class="xeokit-tabs">
+    <div class="xeokit-logo-image">
+        <img src="../images/cde360.png"> </img>
+    </div>
     <div class="xeokit-tab xeokit-modelsTab">
         <a class="xeokit-tab-btn" href="#">Models</a>
         <div class="xeokit-tab-content">
@@ -40,8 +43,12 @@ const explorerTemplate = `<div class="xeokit-tabs">
         <a class="xeokit-tab-btn disabled" href="#">Objects</a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
-            <button type="button" class="xeokit-showAllObjects xeokit-btn disabled" data-tippy-content="Show all objects">Show all</button>
-            <button type="button" class="xeokit-hideAllObjects xeokit-btn disabled" data-tippy-content="Hide all objects">Hide all</button>
+            <button type="button" class="xeokit-showAllObjects xeokit-btn disabled" data-tippy-content="Show all objects">
+                <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+            </button>
+            <button type="button" class="xeokit-hideAllObjects xeokit-btn disabled" data-tippy-content="Hide all objects">
+                <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+            </button>
         </div>
         <div class="xeokit-objects xeokit-tree-panel" ></div>
         </div>
@@ -50,75 +57,82 @@ const explorerTemplate = `<div class="xeokit-tabs">
         <a class="xeokit-tab-btn disabled" href="#">Classes</a>
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
-                <button type="button" class="xeokit-showAllClasses xeokit-btn disabled" data-tippy-content="Show all classes">Show all</button>
-                <button type="button" class="xeokit-hideAllClasses xeokit-btn disabled" data-tippy-content="Hide all classes">Hide all</button>
+                <button type="button" class="xeokit-showAllClasses xeokit-btn disabled" data-tippy-content="Show all classes">
+                    <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+                </button>
+                <button type="button" class="xeokit-hideAllClasses xeokit-btn disabled" data-tippy-content="Hide all classes">
+                    <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+                </button>
             </div>
             <div class="xeokit-classes xeokit-tree-panel" ></div>
         </div>
     </div>
-     <div class="xeokit-tab xeokit-storeysTab">
+    <div class="xeokit-tab xeokit-storeysTab">
         <a class="xeokit-tab-btn disabled" href="#">Storeys</a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
-                <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled" data-tippy-content="Show all storeys">Show all</button>
-                <button type="button" class="xeokit-hideAllStoreys xeokit-btn disabled" data-tippy-content="Hide all storeys">Hide all</button>
+                <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled" data-tippy-content="Show all storeys">
+                    <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+                </button>
+                <button type="button" class="xeokit-hideAllStoreys xeokit-btn disabled" data-tippy-content="Hide all storeys">
+                    <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+                </button>
             </div>
              <div class="xeokit-storeys xeokit-tree-panel"></div>
         </div>
     </div>
-    <div class="xeokit-logo-image">
-        <img src="../images/cde360.png"> </img>
-    </div>
+    <span> <img class="tab-issue-img" src="../images/icon-triangle-caution.svg"></img> </span>
 </div>
-<div id="panel_control_btn"> </div>`;
+<div id="panel_control_btn"> <img src="../images/icon-left-arrow.svg"></img> </div>`;
 
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
     <div class="xeokit-btn-group">
-        <img src="../images/icon-home2.svg" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
+        <img src="../images/icon-home.png" type="button" class="xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-tippy-content="Reset view"></img>
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-cube1.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></img>
+        <img src="../images/icon-2D-3D.png" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x" data-tippy-content="Toggle 2D/3D"></img>
     </div>
     <!-- Fit button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-double2.svg" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></img>
+        <img src="../images/icon-double.png" type="button" class="xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-tippy-content="View fit"></img>
     </div>
     <!-- Ruler mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-chart1.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></img>
+        <img src="../images/icon-chart.png" type="button" class="xeokit-firstPerson xeokit-btn fa fa-ruler-combined fa-2x disabled" data-tippy-content="Measure distance"></img>
     </div>
     <!-- Add annotation mode button-->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-file1.svg" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
+        <img src="../images/icon-file.png" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
     </div>
 
     <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-insert1.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
+        <img src="../images/icon-insert.png" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
     </div>
     <!-- Select tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-arrow1.svg" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></img>
+        <img src="../images/icon-arrow.png" type="button" class="xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-tippy-content="Select objects"></img>
     </div>
     <!-- Query tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-info1.svg" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
+        <img src="../images/icon-info.png" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
     </div>
     <!-- Slice tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-cut1.svg" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></img>
+        <img src="../images/icon-cut.png" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></img>
     </div>
     <!-- First Person mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-person2.svg" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
+        <img src="../images/icon-person.png" type="button" class="xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-tippy-content="First person"></img>
     </div>
 
-    <!-- Panel control button (Hide/Show) -->
+    <!-- Panel control button (Hide/Show) for Mobile view -->
     <div class="xeokit-btn-group" role="group">
-        <div id="hide_panel_btn_mobile" data-tippy-content="Hide Panel"></div>
+        <div id="hide_panel_btn_mobile" data-tippy-content="Hide Panel">
+        </div>
     </div>
     
 </div>`;

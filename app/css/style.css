@@ -35,7 +35,7 @@ body {
     max-width: 400px;
     height: 100%;
     margin-left: -400px;
-    background: #010101;
+    background: #0c0c0c;
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -53,11 +53,13 @@ body {
     position: absolute;
     left: 415px;
     top: 45%;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #fad116;
     cursor: pointer;
+    transform: translateX(-27px);
     transition: all 500ms linear;
+}
+
+#panel_control_btn img {
+    width: 50px;
 }
 
 #hide_panel_btn_mobile {
@@ -80,9 +82,6 @@ body {
     position: fixed;
     left: 15px;
     top: 45%;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #fad116;
     cursor: pointer;
 }
 
@@ -170,8 +169,8 @@ body {
 
 #myNavCubeCanvas {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     bottom: 0;
     right: 0;
     z-index: 200000;
@@ -234,10 +233,6 @@ body {
     body canvas:last-child {
         width: 100% !important;
         height: 100vh !important;
-    }
-
-    .xeokit-logo-image {
-        display: none;
     }
 
     #panel_control_btn {
