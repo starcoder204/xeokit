@@ -296,17 +296,26 @@
         }
 
         var hide_flag = false;
+        document.getElementById("left-arrow-img").style.display = 'block';
+        document.getElementById("right-arrow-img").style.display = 'none';
         document.getElementById('panel_control_btn').addEventListener('click', function() {
             var element = document.getElementById("myViewer");
             var element1 = document.getElementById("myExplorer");
             if (hide_flag == false) {
                 element.classList.add("panel-hide");
                 element1.classList.remove("active");
+                setTimeout(function() {
+                    document.getElementById("left-arrow-img").style.display = 'none';
+                    document.getElementById("right-arrow-img").style.display = 'block';
+                }, 600);
             } else {
                 element.classList.remove("panel-hide");
                 element1.classList.add("active");
+                setTimeout(function() {
+                    document.getElementById("left-arrow-img").style.display = 'block';
+                    document.getElementById("right-arrow-img").style.display = 'none';
+                }, 600);
             }
-            console.log(hide_flag);
             hide_flag = !hide_flag;
         });
 
@@ -320,7 +329,6 @@
                 element.classList.remove("panel-hide");
                 element1.classList.add("active");
             }
-            console.log(hide_flag);
             hide_flag = !hide_flag;
         })
 

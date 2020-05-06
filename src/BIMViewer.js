@@ -83,7 +83,7 @@ const explorerTemplate = `<div class="xeokit-tabs">
     </div>
     <span> <img class="tab-issue-img" src="../images/icon-triangle-caution.svg"></img> </span>
 </div>
-<div id="panel_control_btn"> <img src="../images/icon-left-arrow.svg"></img> </div>`;
+<div id="panel_control_btn"> <img id="left-arrow-img" src="../images/icon-left-arrow.svg"></img> <img id="right-arrow-img" src="../images/icon-right-arrow.svg"></img> </div>`;
 
 const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Reset button -->
