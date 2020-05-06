@@ -732,7 +732,7 @@
 }
 
 .annotation-label {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-shadow: none !important;
     border: 1px solid #dcdbdb !important;
     border-radius: 1px !important;
@@ -755,7 +755,7 @@
 }
 
 .annotation-title {
-    font: normal 18px 'Monserrat', sans-serif !important;
+    font: normal 18px 'Montserrat', sans-serif !important;
     margin-bottom: 4px;
     border: none;
     font-weight: 500 !important;
