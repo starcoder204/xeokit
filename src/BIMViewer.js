@@ -26,10 +26,10 @@ import {ObjectContextMenu} from "./contextMenus/ObjectContextMenu.js";
 import {math} from "@xeokit/xeokit-sdk/src/viewer/scene/math/math.js";
 import {CanvasContextMenu} from "./contextMenus/CanvasContextMenu.js";
 
-const explorerTemplate = `<div class="xeokit-tabs">
-    <div class="xeokit-logo-image">
-        <img src="../images/cde360.png"> </img>
-    </div>
+const explorerTemplate = `<div class="xeokit-logo-image">
+    <img src="../images/cde360.png"> </img>
+</div>
+<div class="xeokit-tabs">
     <div class="xeokit-tab xeokit-modelsTab">
         <a class="xeokit-tab-btn" href="#">Models</a>
         <div class="xeokit-tab-content">
