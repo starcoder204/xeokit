@@ -733,7 +733,7 @@
 
 .annotation-label {
     box-shadow: none !important;
-    border: 1px solid #f3f0f0 !important;
+    border: 1px solid #dcdbdb !important;
     border-radius: 1px !important;
     padding: 0px !important;
 }
@@ -771,13 +771,27 @@
     outline: none;
 }
 
+.annotation-label:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 13px 9px 0;
+    border-color: transparent #ffffff;
+    display: none !important;
+    width: 0;
+    z-index: -1 !important;
+    margin-top: -12px;
+    left: -15px;
+    top: 20px;
+}
+
 .annotation-label:after {
     content: '';
     position: absolute;
     border-style: solid;
     border-width: 8px 12px 8px 0;
     border-color: transparent white;
-    display: block;
+    display: none !important;
     width: 0;
     z-index: -1 !important;
     margin-top: -11px;
