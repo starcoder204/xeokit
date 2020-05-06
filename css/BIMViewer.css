@@ -225,6 +225,7 @@
     /* font: 500 17px Arial; */
     width: 120px;
     height: 30px;
+    outline: none;
 }
 
 .btn-img-div {
@@ -300,7 +301,7 @@
 .xeokit-objectsTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 500px;
+    width: 400px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -379,7 +380,7 @@
 .xeokit-storeysTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 500px;
+    width: 400px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -457,7 +458,7 @@
 .xeokit-classesTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 500px;
+    width: 400px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -530,8 +531,8 @@
 
 .xeokit-tree-panel {
     overflow-y: auto;
-    overflow-x: hidden;
-    height: calc(100% - 230px);
+    overflow-x: auto;
+    height: calc(100% - 180px);
     margin-right: 32px;
 }
 
