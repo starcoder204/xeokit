@@ -330,7 +330,11 @@
                 element1.classList.add("active");
             }
             hide_flag = !hide_flag;
-        })
+        });
+
+        document.getElementById('xeokit_close_btn').addEventListener('click', function() {
+            location.reload();
+        });
 
         window.bimViewer = bimViewer; // For debugging
     };

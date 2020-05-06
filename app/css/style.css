@@ -125,14 +125,26 @@ body {
 }
 
 #myExplorer input[type="checkbox"] {
-    background-color: initial;
     cursor: default;
     -webkit-appearance: checkbox;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 3px 4px 3px 8px;
     padding: initial;
-    border: initial;
+    /* border: initial; */
+
+    border: 2px solid #ffce3a;
+    border-radius: 50%;
+    vertical-align: middle;
+    outline: none;
+    width: 1.1em;
+    height: 1.1em;
+    -webkit-appearance: none;
+}
+
+#myExplorer input[type="checkbox"]:checked {
+    background-color: #ffce3a;
+    border: 2px solid white;
 }
 
 /******************** For checkbox style  **********************/
