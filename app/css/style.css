@@ -62,6 +62,10 @@ body {
     width: 50px;
 }
 
+#right-arrow-img {
+    display: none;
+}
+
 #hide_panel_btn_mobile {
     display: none;
     width: 0px;
