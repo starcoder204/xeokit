@@ -8,7 +8,8 @@
     justify-content: flex-start;
     background: transparent;
     pointer-events: none;
-    padding: 22px;
+    padding: 8px;
+    padding-left: 35px;
 }
 
 .xeokit-btn-group {
@@ -21,7 +22,7 @@
 
 .tippy-tooltip {
     background-color: #0c0c0c;
-    color: #ffce3a;
+    color: rgb(253, 218,37);
     z-index: 3000000000;
 }
 
@@ -34,13 +35,13 @@
 }
 
 .xeokit-logo-image img {
-    height: 60px;
+    height: 50px;
 }
 
 .xeokit-btn {
     position: relative;
     flex: 1 1 auto;
-    background-color: #ffce3a;
+    background-color: rgb(253, 218,37);
     /* text-align: center;
     vertical-align: middle;
     border: none; */
@@ -135,15 +136,15 @@
 
 .xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
     background-color: #0c0c0c;
-    color: #ffce3a;
+    color: rgb(253, 218,37);
 }
 
 @media (min-width: 40em) {
     .xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
         background-color: transparent;
-        border-bottom: #ffce3a solid 1px;
+        border-bottom: rgb(253, 218,37) solid 1px;
         margin-bottom: -1px;
-        color: #ffce3a;
+        color: rgb(253, 218,37);
         text-transform: uppercase;
     }
 }
@@ -159,13 +160,13 @@
     color: #ffffff;
     display: block;
     font-weight: bold;
-    padding: 0.25em 6px;
+    padding: 0.25em 10px;
     text-decoration: none;
 }
 
 @media (min-width: 40em) {
     .xeokit-tabs .xeokit-tab-btn {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: normal;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -175,7 +176,7 @@
 }
 
 .xeokit-tabs .xeokit-tab-btn:hover {
-    color: #ffce3a;
+    color: rgb(253, 218,37);
 }
 
 .xeokit-tabs .xeokit-tab-btn:focus {
@@ -210,12 +211,12 @@
     font-weight: 600;
     position: relative;
     flex: 1 1 auto;
-    background-color: #ffce3a;
+    background-color: rgb(253, 218,37);
     text-align: center;
     vertical-align: middle;
     border: none;
     padding: 0.25rem 0.35rem;
-    margin: 0 5px 10px 25px;
+    margin: 0 40px 0px 15px;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
@@ -263,7 +264,7 @@
 
 .tab-issue-img {
     position: fixed;
-    width: 30px;
+    width: 35px;
     transform: translateX(20px);
 }
 
@@ -333,15 +334,15 @@
 .xeokit-objectsTab ul li a.plus {
     /* background-color: #ded; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-objectsTab ul li a.minus {
     /* background-color: #eee; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-objectsTab ul li a:active {
@@ -376,7 +377,7 @@
 
 .xeokit-objectsTab .highlighted-node { /* Appearance of node highlighted with BIMViewer#showObjectInExplorers() */
     border: black solid 1px;
-    background: yellow;
+    background: rgb(253, 218,37);
     color: black;
     padding-left: 1px;
     padding-right: 5px;
@@ -412,15 +413,15 @@
 .xeokit-storeysTab ul li a.plus {
     /* background-color: #ded; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-storeysTab ul li a.minus {
     /* background-color: #eee; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-storeysTab ul li a:active {
@@ -490,15 +491,15 @@
 .xeokit-classesTab ul li a.plus {
     /* background-color: #ded; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-classesTab ul li a.minus {
     /* background-color: #eee; */
     background-color: transparent;
-    border: 2px solid #ffce3a;
-    color: #ffce3a;
+    border: 2px solid rgb(253, 218,37);
+    color: rgb(253, 218,37);
 }
 
 .xeokit-classesTab ul li a:active {
@@ -559,7 +560,7 @@
 
 .xeokit-tree-panel::-webkit-scrollbar-thumb {
     border-radius: 10px 10px 0 0;
-    background-color: #ffce3a;
+    background-color: rgb(253, 218,37);
     box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
 }
 
@@ -792,22 +793,27 @@
 }
 
 .annotation-label img {
-    width: 25px;
+    width: 20px;
     margin: 9px;
 }
 
 .annotation-title {
-    font: normal 18px 'Montserrat', sans-serif !important;
+    font: normal 17px 'Montserrat', sans-serif !important;
     margin-bottom: 4px;
     border: none;
     font-weight: 500 !important;
-    margin-left: 9px;
+    margin-left: 4px;
     margin-bottom: 0px !important;
 }
 
 .annotation-desc {
     width: 97%;
     border: none;
+    min-height: 4em;
+    max-height: 50vh;
+    resize: none;
+    font: normal 16px 'Montserrat', sans-serif;
+    color: #8c8c8c;
 }
 
 .annotation-title:focus, .annotation-desc:focus {

@@ -51,7 +51,7 @@ body {
     height: 0px;
     z-index: 10001;
     position: absolute;
-    left: 415px;
+    left: 423px;
     top: 45%;
     cursor: pointer;
     transform: translateX(-27px);
@@ -59,7 +59,7 @@ body {
 }
 
 #panel_control_btn img {
-    width: 50px;
+    width: 37px;
 }
 
 #right-arrow-img {
@@ -84,7 +84,7 @@ body {
     height: 0px;
     z-index: 10001;
     position: fixed;
-    left: 15px;
+    left: 21px;
     top: 45%;
     cursor: pointer;
 }
@@ -137,7 +137,7 @@ body {
     padding: initial;
     /* border: initial; */
 
-    border: 2px solid #ffce3a;
+    border: 2px solid #b58b8b;
     border-radius: 50%;
     vertical-align: middle;
     outline: none;
@@ -147,8 +147,8 @@ body {
 }
 
 #myExplorer input[type="checkbox"]:checked {
-    background-color: #ffce3a;
-    border: 2px solid white;
+    background-color: #9c6f6f;
+    border: 2px solid #d6c8c8;
 }
 
 /******************** For checkbox style  **********************/
