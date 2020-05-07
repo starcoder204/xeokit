@@ -93,9 +93,8 @@
 .xeokit-tabs {
     line-height: 1.5;
     padding: 0;
-    /*padding-left: 10px;*/
     height: 100%;
-    overflow:hidden;
+    /* overflow:hidden; */
     position: fixed;
     width: 400px;
 }
