@@ -541,6 +541,7 @@
 .xeokit-tree-panel::-webkit-scrollbar {
     transform: translateX(-10px);
     box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
+    height: 0;
 }
 
 .xeokit-tree-panel::-webkit-scrollbar-track {
@@ -558,14 +559,13 @@
 /* Context menu */
 
 .xeokit-context-menu {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     display: none;
     z-index: 300000;
     background: rgba(255, 255, 255, 0.46);
     border-radius: 6px;
-    padding: 0 10px;
-    width: 200px;
+    width: 170px;
     border-radius: 2px !important;
 }
 
@@ -573,19 +573,21 @@
     list-style: none;
     margin-left: 0;
     padding: 0;
+    margin-top: 0px;
 }
 
 .xeokit-context-menu ul li {
     list-style-type: none;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    color: black;
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    color: #969494;
     border-bottom: 1px solid gray;
     background: rgba(255, 255, 255, 0.46);
     cursor: pointer;
     width: calc(100% - 30px);
+    float: left;
 }
 
 .xeokit-context-menu ul li:hover {
@@ -600,7 +602,7 @@
 
 .xeokit-context-menu .disabled {
     display: inline-block;
-    color: gray;
+    color: #cccccc;
     cursor: default;
     font-weight: normal;
 }
@@ -646,7 +648,15 @@
 #xeokit-context-menu-6-8,
 #xeokit-context-menu-6-13 {
     border-bottom: 1px solid rgba(128, 128, 128, 0.3) !important;
+    padding-bottom: 5px !important;
 }
+
+#xeokit-context-menu-1-6,
+#xeokit-context-menu-2-13,
+#xeokit-context-menu-4-16 {
+    padding-bottom: 5px !important;
+}
+
 
 .annotation-marker {
     color: black !important;
