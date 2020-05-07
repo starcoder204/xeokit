@@ -115,7 +115,7 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     <!-- Tools button group -->
     <!-- Hide tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-insert.png" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
+        <img src="../images/icon-eye.svg" type="button" class="xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-tippy-content="Hide objects"></img>
     </div>
     <!-- Select tool button -->
     <div class="xeokit-btn-group" role="group">
