@@ -591,9 +591,9 @@
 }
 
 .xeokit-context-menu ul li:hover {
-    background: #a09999;
-    color: white;
-    font-weight: bold;
+    background: transparent;
+    color: #634a4a;
+    font-weight: 700;
 }
 
 .xeokit-context-menu ul li span {
@@ -608,9 +608,9 @@
 }
 
 .xeokit-context-menu .disabled:hover {
-    color: gray;
+    color: #cccccc;
     cursor: default;
-    background: #eeeeee;
+    background: transparent;
     font-weight: normal;
 }
 
@@ -653,8 +653,31 @@
 
 #xeokit-context-menu-1-6,
 #xeokit-context-menu-2-13,
+#xeokit-context-menu-2-6,
+#xeokit-context-menu-2-10,
 #xeokit-context-menu-4-16 {
-    padding-bottom: 5px !important;
+    padding-bottom: 10px !important;
+}
+
+#xeokit-context-menu-2-0,
+#xeokit-context-menu-2-3,
+#xeokit-context-menu-2-7,
+#xeokit-context-menu-2-11 {
+    padding-top: 10px !important;
+}
+
+
+#xeokit-context-menu-2-1,
+#xeokit-context-menu-2-2,
+#xeokit-context-menu-2-4,
+#xeokit-context-menu-2-5,
+#xeokit-context-menu-2-6,
+#xeokit-context-menu-2-8,
+#xeokit-context-menu-2-9,
+#xeokit-context-menu-2-10,
+#xeokit-context-menu-2-12,
+#xeokit-context-menu-2-13 {
+    padding-top: 0px !important;
 }
 
 
