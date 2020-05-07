@@ -109,7 +109,7 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     </div>
     <!-- Add annotation mode button-->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-file.png" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add annotation"></img>
+        <img src="../images/icon-file.png" type="button" class="xeokit-addAnnotation xeokit-btn fa fa-sticky-note fa-2x disabled" data-tippy-content="Add issues"></img>
     </div>
 
     <!-- Tools button group -->
@@ -123,11 +123,11 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     </div>
     <!-- Query tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-info.png" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Query objects"></img>
+        <img src="../images/icon-info.png" type="button" class="xeokit-query xeokit-btn fa fa-info-circle fa-2x disabled" data-tippy-content="Properties"></img>
     </div>
     <!-- Slice tool button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-cut.png" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Slice objects"></img>
+        <img src="../images/icon-cut.png" type="button" class="xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-tippy-content="Section model"></img>
     </div>
     <!-- First Person mode button -->
     <div class="xeokit-btn-group" role="group">
