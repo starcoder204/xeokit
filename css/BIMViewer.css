@@ -368,7 +368,7 @@
 
 .xeokit-objectsTab .highlighted-node { /* Appearance of node highlighted with BIMViewer#showObjectInExplorers() */
     border: black solid 1px;
-    background: rgba(255, 255, 0, 0.8);
+    background: yellow;
     color: black;
     padding-left: 1px;
     padding-right: 5px;
