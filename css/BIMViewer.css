@@ -395,7 +395,7 @@
 
 .xeokit-objectsTab .highlighted-node { /* Appearance of node highlighted with BIMViewer#showObjectInExplorers() */
     border: black solid 1px;
-    background: rgb(253, 218,37);
+    background: #A7A9AB;
     color: black;
     padding-left: 1px;
     padding-right: 5px;
@@ -477,7 +477,7 @@
 
 .xeokit-storeysTab .highlighted-node { /* Appearance of node highlighted with BIMViewer#showObjectInExplorers() */
     border: black solid 1px;
-    background: yellow;
+    background: #A7A9AB;
     color: black;
     padding-left: 1px;
     padding-right: 5px;
@@ -560,7 +560,7 @@
 
 .xeokit-classesTab .highlighted-node { /* Appearance of node highlighted with BIMViewer#showObjectInExplorers() */
     border: black solid 1px;
-    background: yellow;
+    background: #A7A9AB;
     color: black;
     padding-left: 1px;
     padding-right: 5px;

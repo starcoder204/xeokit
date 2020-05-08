@@ -136,9 +136,7 @@ body {
             box-sizing: border-box;
     margin: 3px 4px 3px 8px;
     padding: initial;
-    /* border: initial; */
-
-    border: 2px solid #b58b8b;
+    border: 2px solid white;
     border-radius: 50%;
     vertical-align: middle;
     outline: none;
@@ -148,8 +146,8 @@ body {
 }
 
 #myExplorer input[type="checkbox"]:checked {
-    background-color: #9c6f6f;
-    border: 2px solid #d6c8c8;
+    background-color: rgb(253, 218,37);
+    border: 2px solid white;
 }
 
 /******************** For checkbox style  **********************/
