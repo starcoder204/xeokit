@@ -96,7 +96,7 @@
     height: 100%;
     /* overflow:hidden; */
     position: fixed;
-    width: 400px;
+    width: 370px;
 }
 
 .xeokit-tabs::before, .xeokit-tabs::after {
@@ -214,7 +214,7 @@
 }
 
 .xeokit-tabs .xeokit-btn {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     position: relative;
     flex: 1 1 auto;
@@ -223,21 +223,26 @@
     vertical-align: middle;
     border: none;
     padding: 0.25rem 0.35rem;
-    margin: 0 40px 0px 15px;
+    margin: 0 5px 0px 0px;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: button;
     overflow: visible;
     box-sizing: border-box;
     align-items: flex-start;
-    /* font: 500 17px Arial; */
-    width: 120px;
+    width: 130px;
     height: 30px;
     outline: none;
 }
 
 .xeokit-unloadAllModels.xeokit-btn {
-    transform: translateX(-35px);
+    
+}
+
+.xeokit-hideAllObjects.xeokit-btn,
+.xeokit-hideAllClasses.xeokit-btn,
+.xeokit-hideAllStoreys.xeokit-btn {
+    margin-left: 45px;
 }
 
 .btn-img-div {
@@ -246,12 +251,15 @@
 
 .xeokit-showAllObjects .btn-img-div img,
 .xeokit-showAllClasses .btn-img-div img,
-.xeokit-showAllStoreys .btn-img-div img {
-    transform: translateY(-2px);
+.xeokit-showAllStoreys .btn-img-div img,
+.xeokit-hideAllObjects .btn-img-div img,
+.xeokit-hideAllClasses .btn-img-div img,
+.xeokit-hideAllStoreys .btn-img-div img {
+    width: 24px;
 }
 
 .btn-img-div span {
-    transform: translate(14px, 3px);
+    transform: translate(14px, 0px);
 }
 
 .xeokit-tabs .xeokit-btn:hover {
@@ -271,8 +279,8 @@
 
 .tab-issue-img {
     position: fixed;
-    width: 27px;
-    transform: translateX(30px);
+    width: 25px;
+    transform: translateX(10px);
 }
 
 .xeokit-modelsTab .xeokit-form-check {
@@ -314,12 +322,13 @@
 .xeokit-objectsTab ul {
     list-style: none;
     padding-left: 1.75em;
+    margin-top: 0px;
 }
 
 .xeokit-objectsTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 400px;
+    width: 370px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -398,7 +407,7 @@
 .xeokit-storeysTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 400px;
+    width: 370px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -476,7 +485,7 @@
 .xeokit-classesTab ul li {
     margin: 2px 0;
     position: relative;
-    width: 400px;
+    width: 370px;
     line-height: 3ex;
     padding: 5px;
 }
@@ -550,23 +559,26 @@
 .xeokit-tree-panel {
     overflow-y: auto;
     overflow-x: auto;
-    height: calc(100% - 180px);
+    height: calc(100% - 170px);
     margin-right: 32px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .xeokit-tree-panel::-webkit-scrollbar {
-    transform: translateX(-10px);
+    transform: translateX(-6px);
     box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
     height: 0;
+    width: 12px;
 }
 
 .xeokit-tree-panel::-webkit-scrollbar-track {
     background-color: #67676a;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .xeokit-tree-panel::-webkit-scrollbar-thumb {
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
     background-color: rgb(253, 218,37);
     box-shadow: inset 0 0 1px rgba(0,0,0,0.9);
 }
@@ -742,7 +754,7 @@
     padding: 0;
     border: 2px solid #888;
     border-radius: 0.5em;
-    width: 400px;
+    width: 370px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: xeokit-busy-modal-animatetop;
     -webkit-animation-duration: 0.6s;

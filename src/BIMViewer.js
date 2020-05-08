@@ -44,10 +44,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
             <button type="button" class="xeokit-showAllObjects xeokit-btn disabled" data-tippy-content="Show all objects">
-                <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+                <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
             </button>
             <button type="button" class="xeokit-hideAllObjects xeokit-btn disabled" data-tippy-content="Hide all objects">
-                <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+                <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
             </button>
         </div>
         <div class="xeokit-objects xeokit-tree-panel" ></div>
@@ -58,10 +58,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
                 <button type="button" class="xeokit-showAllClasses xeokit-btn disabled" data-tippy-content="Show all classes">
-                    <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+                    <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
                 </button>
                 <button type="button" class="xeokit-hideAllClasses xeokit-btn disabled" data-tippy-content="Hide all classes">
-                    <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+                    <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
                 </button>
             </div>
             <div class="xeokit-classes xeokit-tree-panel" ></div>
@@ -72,10 +72,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
                 <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled" data-tippy-content="Show all storeys">
-                    <div class="btn-img-div"> <img width="27" src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
+                    <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
                 </button>
                 <button type="button" class="xeokit-hideAllStoreys xeokit-btn disabled" data-tippy-content="Hide all storeys">
-                    <div class="btn-img-div"> <img width="27" src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
+                    <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
                 </button>
             </div>
              <div class="xeokit-storeys xeokit-tree-panel"></div>
