@@ -831,12 +831,14 @@
 }
 
 .annotation-title {
-    font: normal 17px 'Montserrat', sans-serif !important;
+    font: normal 14px 'Montserrat', sans-serif !important;
     margin-bottom: 4px;
     border: none;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     margin-left: 4px;
     margin-bottom: 0px !important;
+    resize: none;
+    margin-top: 10px;
 }
 
 .annotation-desc {
