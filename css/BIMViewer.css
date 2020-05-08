@@ -32,6 +32,7 @@
 
 .xeokit-logo-image {
     padding: 10px;
+    padding-left: 15px;
 }
 
 .xeokit-logo-image img {
@@ -286,6 +287,7 @@
 .xeokit-modelsTab .xeokit-form-check {
     padding: 2px 0 2px 15px;
     line-height: 3ex;
+    margin: 32px;
 }
 
 .xeokit-modelsTab .xeokit-form-check input {
