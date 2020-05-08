@@ -401,6 +401,10 @@
     padding-right: 5px;
 }
 
+.xeokit-objectsTab .highlighted-node a {
+    transform: translateX(-10px) !important;
+}
+
 .xeokit-storeysTab ul {
     list-style: none;
     padding-left: 1.75em;
@@ -477,6 +481,10 @@
     color: black;
     padding-left: 1px;
     padding-right: 5px;
+}
+
+.xeokit-storeysTab .highlighted-node a {
+    transform: translateX(-10px) !important;
 }
 
 .xeokit-classesTab ul {
@@ -556,6 +564,10 @@
     color: black;
     padding-left: 1px;
     padding-right: 5px;
+}
+
+.xeokit-classesTab .highlighted-node a {
+    transform: translateX(-10px) !important;
 }
 
 .xeokit-tree-panel {
