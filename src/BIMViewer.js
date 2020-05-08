@@ -97,7 +97,7 @@ const toolbarTemplate = `<div class="xeokit-toolbar">
     </div>
     <!-- 3D Mode button -->
     <div class="xeokit-btn-group" role="group">
-        <img src="../images/icon-2D-3D.png" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x disabled" data-tippy-content="Toggle 2D/3D"></img>
+        <img src="../images/icon-2D-3D.svg" type="button" class="xeokit-threeD xeokit-btn fa fa-cube fa-2x disabled" data-tippy-content="Toggle 2D/3D"></img>
     </div>
     <!-- Fit button -->
     <div class="xeokit-btn-group" role="group">
