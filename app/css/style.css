@@ -280,7 +280,7 @@ body {
     }
     #myExplorer {
         overflow: auto;
-        min-height: 300px;
+        min-height: 340px;
         min-width: 100%;
         max-width: 100%;
         padding-right: 15px;
@@ -318,5 +318,24 @@ body {
 
     #hide_panel_btn_mobile {
         display: block;
+    }
+
+    .xeokit-tabs .xeokit-btn-group {
+        margin-bottom: 0px;
+    }
+
+    .xeokit-tabs .xeokit-tab-content {
+        padding-top: 5px !important;
+    }
+
+    .xeokit-tabs .xeokit-tab-content .xeokit-form-check {
+        padding: 5px;
+        margin: 0 32px;
+    }
+
+    .xeokit-tabs .xeokit-tab-content .xeokit-objects, 
+    .xeokit-tabs .xeokit-tab-content .xeokit-classes, 
+    .xeokit-tabs .xeokit-tab-content .xeokit-storeys {
+        margin-top: 0px;
     }
 }
