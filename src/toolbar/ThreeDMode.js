@@ -16,7 +16,7 @@ class ThreeDMode extends Controller {
 
         this._buttonElement = cfg.buttonElement;
 
-        this._active = false;
+        this._active = true;
 
         this.on("enabled", (enabled) => {
             if (!enabled) {
