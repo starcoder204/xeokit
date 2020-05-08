@@ -34,7 +34,7 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <a class="xeokit-tab-btn" href="#">Models<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
-                <button type="button" class="xeokit-unloadAllModels xeokit-btn disabled" data-tippy-content="Unload all models">Unload all</button>
+                <button type="button" class="xeokit-unloadAllModels xeokit-btn disabled">Unload all</button>
             </div>
             <div class="xeokit-models" ></div>
         </div>
@@ -43,10 +43,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <a class="xeokit-tab-btn disabled" href="#">Objects<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
-            <button type="button" class="xeokit-showAllObjects xeokit-btn disabled" data-tippy-content="Show all objects">
+            <button type="button" class="xeokit-showAllObjects xeokit-btn disabled">
                 <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
             </button>
-            <button type="button" class="xeokit-hideAllObjects xeokit-btn disabled" data-tippy-content="Hide all objects">
+            <button type="button" class="xeokit-hideAllObjects xeokit-btn disabled">
                 <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
             </button>
         </div>
@@ -57,10 +57,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <a class="xeokit-tab-btn disabled" href="#">Classes<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
-                <button type="button" class="xeokit-showAllClasses xeokit-btn disabled" data-tippy-content="Show all classes">
+                <button type="button" class="xeokit-showAllClasses xeokit-btn disabled">
                     <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
                 </button>
-                <button type="button" class="xeokit-hideAllClasses xeokit-btn disabled" data-tippy-content="Hide all classes">
+                <button type="button" class="xeokit-hideAllClasses xeokit-btn disabled">
                     <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
                 </button>
             </div>
@@ -71,10 +71,10 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         <a class="xeokit-tab-btn disabled" href="#">Storeys<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
-                <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled" data-tippy-content="Show all storeys">
+                <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled">
                     <div class="btn-img-div"> <img src="../images/icon_plus.svg"></img> <span> Show all </span> </div>
                 </button>
-                <button type="button" class="xeokit-hideAllStoreys xeokit-btn disabled" data-tippy-content="Hide all storeys">
+                <button type="button" class="xeokit-hideAllStoreys xeokit-btn disabled">
                     <div class="btn-img-div"> <img src="../images/icon_minus.svg"></img> <span> Hide all </span> </div>
                 </button>
             </div>
