@@ -31,7 +31,7 @@ const explorerTemplate = `<div class="xeokit-logo-image">
 </div>
 <div class="xeokit-tabs">
     <div class="xeokit-tab xeokit-modelsTab">
-        <a class="xeokit-tab-btn" href="#">Models</a>
+        <a class="xeokit-tab-btn" href="#">Models<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
                 <button type="button" class="xeokit-unloadAllModels xeokit-btn disabled" data-tippy-content="Unload all models">Unload all</button>
@@ -40,7 +40,7 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         </div>
     </div>
     <div class="xeokit-tab xeokit-objectsTab">
-        <a class="xeokit-tab-btn disabled" href="#">Objects</a>
+        <a class="xeokit-tab-btn disabled" href="#">Objects<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
             <button type="button" class="xeokit-showAllObjects xeokit-btn disabled" data-tippy-content="Show all objects">
@@ -54,7 +54,7 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         </div>
     </div>
     <div class="xeokit-tab xeokit-classesTab">
-        <a class="xeokit-tab-btn disabled" href="#">Classes</a>
+        <a class="xeokit-tab-btn disabled" href="#">Classes<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
             <div class="xeokit-btn-group">
                 <button type="button" class="xeokit-showAllClasses xeokit-btn disabled" data-tippy-content="Show all classes">
@@ -68,7 +68,7 @@ const explorerTemplate = `<div class="xeokit-logo-image">
         </div>
     </div>
     <div class="xeokit-tab xeokit-storeysTab">
-        <a class="xeokit-tab-btn disabled" href="#">Storeys</a>
+        <a class="xeokit-tab-btn disabled" href="#">Storeys<div class="tab-bottom-line"></div></a>
         <div class="xeokit-tab-content">
          <div class="xeokit-btn-group">
                 <button type="button" class="xeokit-showAllStoreys xeokit-btn disabled" data-tippy-content="Show all storeys">
@@ -335,7 +335,7 @@ class BIMViewer extends Controller {
 
         this._navCubeMode = new NavCubeMode(this, {
             navCubeCanvasElement: navCubeCanvasElement,
-            active: false
+            active: true
         });
 
         this._busyModal = new BusyModal(this, {
